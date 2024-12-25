@@ -521,7 +521,7 @@ export default function Home() {
     <div className="flex flex-wrap w-full mb-20">
       <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-600">
-          Unlocking My Skills Set's The Hidden Talent!
+          Unlocking My Skills Sets The Hidden Talent!
         </h1>
         <div className="h-1 w-24 bg-blue-500 rounded"></div>
       </div>
