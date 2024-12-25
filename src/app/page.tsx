@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Image from "next/image";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
