@@ -64,7 +64,7 @@ export default function Home() {
             <Image
               className="object-cover object-center rounded"
               alt="hero"
-              src="/images/profile.jfif"
+              src="/images/pr.jpg"
               width = {300}
               height = {300}
             />
