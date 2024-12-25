@@ -87,11 +87,11 @@ export default function Home() {
             <p className="mb-8 leading-relaxed">
               I am Subha Ahmed, a beginner web developer passionate about
               creating dynamic and user-friendly websites. I have a strong
-              foundation in HTML, CSS, and JavaScript, and I'm constantly
+              foundation in HTML, CSS, and JavaScript, and Iam constantly
               learning new frameworks and tools like React to enhance my skills.
               My goal is to build responsive, accessible web applications and
               improve my coding abilities through hands-on experience and
-              continuous learning. I'm excited about problem-solving and
+              continuous learning. I am excited about problem-solving and
               bringing creative ideas to life through code.
             </p>
 
@@ -173,10 +173,12 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 md:h-36 hover:scale-110 w-full object-cover object-center"
                   src="/images/calculator.jpg"
                   alt="blog"
+                  width={300}
+                  height={300}
                 />
                 <div className="p-6">
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
@@ -238,10 +240,13 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 hover:scale-110 md:h-36 w-full object-cover object-center"
                   src="/images/atm.jpg"
-                  alt="blog"/>
+                  alt="blog"
+                  width={300}
+                  height={300}
+                  />
                 <div className="p-6">
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     Project 02: ATM
@@ -302,10 +307,12 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img
+                <Image
                   className="lg:h-48 hover:scale-110 md:h-36 w-full object-cover object-center"
                   src="/images/game.jpg"
                   alt="blog"
+                  width={300}
+                  height={300}
                 />
                 <div className="p-6">
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
