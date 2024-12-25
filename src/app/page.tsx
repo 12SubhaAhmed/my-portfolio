@@ -5,6 +5,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill } from "react-icons/ri";
+import Image from "next/image";
 
 ///////// NAVBAR ///////////
 
@@ -35,7 +36,7 @@ export default function Home() {
             <span className="ml-3 text-xl text-white">Subha Ahmed</span>
           </a>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <a href="https://github.com/12SubhaAhmed">
+            <a href="https://github.com/12SubhaAhmed" target="_blank" rel="noopener noreferrer">
               <button className="inline-flex items-center bg-green-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 text-white rounded text-base mt-4 md:mt-0">
                 Github
                 <svg
@@ -60,10 +61,12 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
+            <Image
               className="object-cover object-center rounded"
               alt="hero"
               src="/images/profile.jfif"
+              width = {300}
+              height = {300}
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -82,7 +85,7 @@ export default function Home() {
               />
             </h1>
             <p className="mb-8 leading-relaxed">
-              I'm Subha Ahmed, a beginner web developer passionate about
+              I am Subha Ahmed, a beginner web developer passionate about
               creating dynamic and user-friendly websites. I have a strong
               foundation in HTML, CSS, and JavaScript, and I'm constantly
               learning new frameworks and tools like React to enhance my skills.
@@ -172,7 +175,7 @@ export default function Home() {
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-48 md:h-36 hover:scale-110 w-full object-cover object-center"
-                  src="https://st2.depositphotos.com/1900401/5695/i/950/depositphotos_56950345-stock-photo-work-on-the-calculator-and.jpg"
+                  src="/images/calculator.jpg"
                   alt="blog"
                 />
                 <div className="p-6">
@@ -237,9 +240,8 @@ export default function Home() {
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-48 hover:scale-110 md:h-36 w-full object-cover object-center"
-                  src="https://st.depositphotos.com/1009815/4984/i/450/depositphotos_49846745-stock-photo-atm-insert-card.jpg"
-                  alt="blog"
-                />
+                  src="/images/atm.jpg"
+                  alt="blog"/>
                 <div className="p-6">
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     Project 02: ATM
@@ -302,7 +304,7 @@ export default function Home() {
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <img
                   className="lg:h-48 hover:scale-110 md:h-36 w-full object-cover object-center"
-                  src="https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg"
+                  src="/images/game.jpg"
                   alt="blog"
                 />
                 <div className="p-6">
@@ -504,61 +506,61 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* //////////// SKILLS SECTION /////////// */}
 
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-6 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-600">
-                Unlocking My Skills Set's The Hidden Tallent!
-              </h1>
-              <div className="h-1 w-24 bg-blue-500 rounded"></div>
-            </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              Highlight the range of skills and experties, emphasizing the
-              impact and value brought to my projects
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-6 mx-auto">
+    <div className="flex flex-wrap w-full mb-20">
+      <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-600">
+          Unlocking My Skills Set's The Hidden Talent!
+        </h1>
+        <div className="h-1 w-24 bg-blue-500 rounded"></div>
+      </div>
+      <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+        Highlight the range of skills and expertise, emphasizing the impact and value brought to my projects.
+      </p>
+    </div>
+  </div>
+</section>
 
-      <section>
-        <div className="container px-2 py-6 mx-auto flex flex-wrap justify-center items-center space-x-6 text-2xl">
-          <h1 className="title-font h-24 p-5 sm:text-4xl text-center text-3xl mb-4 font-medium text-blue-500">
-            <Typewriter
-              options={{
-                strings: ["PROGRAMMING LANGUAGES"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
-          {/* //icons */}
-          <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110">
-            <FaHtml5 className="text-orange-500 text-6xl" />
-            <span className="mt-2 text-lg text-black pl-2">HTML</span>
-          </div>
+<section>
+  <div className="container px-2 py-6 mx-auto flex flex-wrap justify-center items-center space-x-6 sm:space-x-4">
+    <h1 className="title-font h-24 p-5 sm:text-4xl text-center text-3xl mb-4 font-medium text-blue-500">
+      <Typewriter
+        options={{
+          strings: ["PROGRAMMING LANGUAGES"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </h1>
 
-          {/* //icons */}
-          <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110">
-            <FaCss3Alt className="text-blue-500 text-6xl" />
-            <span className="mt-2 text-lg text-black pl-3">CSS</span>
-          </div>
+    {/* Skill Icons */}
+    <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 space-y-4">
+      <FaHtml5 className="text-orange-500 text-6xl" />
+      <span className="mt-2 text-lg sm:text-base text-black pl-2">HTML</span>
+    </div>
 
-          {/* //icons */}
-          <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110">
-            <IoLogoJavascript className="text-yellow-500 text-6xl" />
-            <span className="mt-2 text-lg text-black">JAVASCRIPT</span>
-          </div>
+    <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 space-y-4">
+      <FaCss3Alt className="text-blue-500 text-6xl" />
+      <span className="mt-2 text-lg sm:text-base text-black pl-3">CSS</span>
+    </div>
 
-          {/* //icons */}
-          <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110">
-            <RiNextjsFill className="text-6xl" />
-            <span className="mt-2 text-lg text-black">Next JS</span>
-          </div>
-        </div>
-      </section>
+    <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 space-y-4">
+      <IoLogoJavascript className="text-yellow-500 text-6xl" />
+      <span className="mt-2 text-lg sm:text-base text-black">JAVASCRIPT</span>
+    </div>
+
+    <div className="flex flex-col items-start bg-white border-2 border-gray-300 p-4 transition-transform duration-300 ease-in-out transform hover:scale-110 space-y-4">
+      <RiNextjsFill className="text-6xl" />
+      <span className="mt-2 text-lg sm:text-base text-black">Next JS</span>
+    </div>
+  </div>
+</section>
+
+
 
       {/* ///////// CONTACT US ////////////// */}
       <section className="text-gray-600 body-font relative">
